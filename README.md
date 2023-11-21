@@ -156,6 +156,8 @@
 
 > * `Function is get an argument and return any data type.`
 
+<
+	pre>
  // Defining an UDF :
 
   return-type functionName(parameters)
