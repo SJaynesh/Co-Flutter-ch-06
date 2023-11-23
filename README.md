@@ -411,20 +411,210 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/62b1204a-2cb5-4d7
 > * Class is a Categorized Collection of Attributes and methods.
 > * Class is a blueprint which is being followed by its variables(objects).
 
+<br>
 
 ### Object :
 > * Object is a Variable(instance) of class by which we can use the data of class.
 > * Object is reference of pre-built category(class) which provides the inbuilt function alities.
 
+<br>
+
 <p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/7db99bc9-ab03-4ee2-a7a7-a7a6d4aa8513.png" width=60% height=50%></p>
+
+<br>
 
 <p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/fb2259ea-6fdf-4a8c-ad25-94ebaa12f3f8.png" width=60% height=50%></p>
 
+<br>
+
 https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/8cd02d9c-bc67-4177-95f6-a3ebf182743f
 
+<br><br>
 
+## Syntax :
 
+<pre>
+	* Syntax to declare a class :
+	
+	class ClassName
+	{
+		/*
+		Properties;
+		Methods;
+		Constructors;
+		*/
+	}
 
+	* Syntax to create an object:
+	void main()
+	{
+		ClassName object_name = ClassName();
+	}
+	
+</pre>
+
+<br><br>
+
+## Encapsulation :
+> * Encapsulation means wrapping code as much as you can in a class.
+> * Every logic must be written in class.
+> * It helps in hiding the implementation details and provides data protection.
+
+<br>
+
+### Setter And Getter
+
+<br>
+
+#### Setter :
+> * A function to take input of attributes.
+
+<br>
+
+#### Getter :
+> * A function to give output of attributes.
+
+<br>
+
+<pre>
+	import 'dart:io';
+	
+	// Class
+	class Student {
+	  int? rollNo;
+	  String? name;
+	  double? per;
+	
+	  // Setter
+	  void setData() {
+	    stdout.write("Enter your Roll No : ");
+	    rollNo = int.parse(stdin.readLineSync()!);
+	    stdout.write("Enter your Name : ");
+	    name = stdin.readLineSync()!;
+	    stdout.write("Enter your Percentage  : ");
+	    per = double.parse(stdin.readLineSync()!);
+	  }
+	
+	  // Getter
+	  void getData() {
+	    print("Roll No\t: $rollNo");
+	    print("Name\t: $name");
+	    print("Per\t: $per");
+	  }
+	}
+	
+	void main() {
+	
+	  //Object
+	  Student s = Student();
+	
+	  s.setData();
+	  s.getData();
+	}
+
+</pre>
+
+<br><br>
+
+## this keyword :
+
+<br>
+
+> * When class attributes and function parameters both have same name, then we can make difference and identify the class attributes using this keyword.
+> * this keyword is written before the class variable.
+
+<br>
+
+<pre>
+	// Class
+	class Student {
+	  int? id;
+	  String? name;
+	  double? per;
+	
+	  //Setter
+	  // This Keyword
+	  void setData({required int id, required String name, required double per}) {
+	    this.id = id;
+	    this.name = name;
+	    this.per = per;
+	  }
+	
+	  //Getter
+	  void getData() {
+	    print("Roll No\t: $id");
+	    print("Name\t: $name");
+	    print("Per\t: $per");
+	  }
+	}
+	
+	void main() {
+	  //Object
+	  Student s = Student();
+	
+	  s.setData(id: 101, name: "Jaynesh", per: 80.56);
+	
+	  s.getData();
+	}
+
+</pre>
+
+<br><br>
+
+## Array of Objects : 
+
+<br>
+
+> * Collection / group of Object of same class.
+
+<br>
+
+<pre>
+	import 'dart:io';
+
+	// Class
+	class Student {
+	  int? rollNo;
+	  String? name;
+	  double? per;
+	
+	  // Setter
+	  void setData() {
+	    stdout.write("\nEnter your Roll No : ");
+	    rollNo = int.parse(stdin.readLineSync()!);
+	    stdout.write("Enter your Name : ");
+	    name = stdin.readLineSync()!;
+	    stdout.write("Enter your Percentage  : ");
+	    per = double.parse(stdin.readLineSync()!);
+	  }
+	
+	  // Getter
+	  void getData() {
+	    print("\nRoll No\t: $rollNo");
+	    print("Name\t: $name");
+	    print("Per\t: $per");
+	  }
+	}
+	
+	void main() {
+	  int n;
+	
+	  stdout.write("Enter n : ");
+	  n = int.parse(stdin.readLineSync()!);
+	
+	  // Array Of Object
+	  List obj = List.generate(n, (index) => Student());
+	
+	  obj.forEach((e) {
+	    e.setData();
+	  });
+	
+	  obj.forEach((e) {
+	    e.getData();
+	  });
+	}
+
+</pre>
 
 
 
