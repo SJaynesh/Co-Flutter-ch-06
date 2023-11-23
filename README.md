@@ -362,7 +362,66 @@ void main() {
 </pre>
 
 
+## OOP :
+> * `OOP Stander for Object Oriented Programming.`
+> * OOP is a Concept by which code becomes well structured, well Organized, well Secured and increases it's reusability.
+
+### Why use OOP concept ?
+> * You code is :-
+> * - Well Structured
+> * - Well Organuzed
+> * - Well Secured
+> * - Reusability
+
+<br/><br/>
+### - Principles of OOP :
+
+> * 4 Principles OOP :
+>
+>   * 1. Encapsulation => Data binding => (To Wrap)
+>   * 2. Inheritence => Data passing  => (to share)
+>   * 3. Polymorphism => Multitasking => (to behave in multiple ways)
+>   * 4. Data Abstraction => Security/Restriction => (to secure)
+
+<br/><br/>
+
+<br/><br/>
+
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/f131c9bd-27bf-454f-9721-66d953e4d0ec.png" width=60% height=50%></p>
+
+<br>
+
+https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/62b1204a-2cb5-4d72-88d5-1b70ce6103b8
+
+<br/><br/>
+
+### Two components of OOP :
+ > `Class` <br/>
+ > `Object` <br/>
+
+<br/><br/>
+
 ## Class & Object :
+
+<br>
+
+### Class :
+> * `Class is a Collection of Data Members And Data Member Function.`
+> * Class is a User Define Datatype.
+> * Class is a Categorized Collection of Attributes and methods.
+> * Class is a blueprint which is being followed by its variables(objects).
+
+
+### Object :
+> * Object is a Variable(instance) of class by which we can use the data of class.
+> * Object is reference of pre-built category(class) which provides the inbuilt function alities.
+
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/7db99bc9-ab03-4ee2-a7a7-a7a6d4aa8513.png" width=60% height=50%></p>
+
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/fb2259ea-6fdf-4a8c-ad25-94ebaa12f3f8.png" width=60% height=50%></p>
+
+https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/8cd02d9c-bc67-4177-95f6-a3ebf182743f
+
 
 
 
