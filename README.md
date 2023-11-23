@@ -15,6 +15,10 @@
 
 <br><br>
 
+### Types of function block :
+> * 1. block function    () {}   //Can contain multiple statements
+> * 2. lambda function   () =>   //Can contain only single statement (Expression)
+
 ### Types of Function : 
 
 > `1) Built - in function` <br><br>
@@ -174,14 +178,20 @@
 <br><br>
 
 ## Expression :
-> * `Expression means Single line function.`
+> * `Expression means Single line Statement.`
 
 <br>
 
 ## Function as Expression :
 > * `Function as expression means converting a function into short-hand syntax.`
+> * function which contains only single statement.
 > * Fat-arrow (=>) is used to make any function look like an expression.
+
+### Steps to convert into expression :
+> * remove '{}' or 'return' keyword.
+> * add '=>' (fat arrow) in replacement of '{}' and 'return' keyword.
 > * A function that has a body of only one line, in the function itself expression can be converted. For that { } has to be removed.
+> * Fat arrow can work as a return keyword.  
 
 <br>
 
@@ -279,6 +289,11 @@
 
 ### 1) Optional Positional :
 > * To specify optional positional parameters, use square [ ] brackets.
+> *  Optional Positional to assign default value/null aware.
+> *  ?? (NULL CHECK OPERATOR)
+
+#### Syntax :
+> * `void functionName(param1, [optional_param_1, optional_param_2]) { }`
 
 <pre>
 	// Optional Positional <=> []
@@ -293,8 +308,61 @@
 
 </pre>
 
+<br>
+
+<pre>
+	// Optional Positional <=> []
+	
+	int sum(int a, int b, [int? c, int? d]) => a + b + (c ?? 0) + (d ?? 0);
+	void main() {
+	  int res = sum(10, 10);
+	
+	  print("Sum : $res");
+	}
+
+</pre>
+
+<br><br>
+
+### 2) Optional Named :
+> * Unlike positional parameters, the parameter's name must be specified while the value is being passed.
+> * Curly brace { } can be used to specify optional named parameters.
+> * Optional Named to assign default value/null aware/required.
+
+<br>
+
+<pre>
+	int sum(int a, int b, {int c = 0, int d = 0}) => a + b + c + d;
+	
+	void main() {
+	  int res = sum(10, 20, c: 50, d: 40);
+	  print("Sum : $res");
+	}
+
+</pre>
 
 
+<br><br>
+
+### 3) `Required Parameters :`
+> * Required Parameters is use required keyword.
+> * Required means Fix assign arguments in function.
+> * required arguments to write inside for { }.
+
+<pre>
+	
+int sum(int a, int b, {required int c, required int d}) => a + b + c + d;
+
+void main() {
+  int res = sum(10, 20, c: 10, d: 20);
+
+  print("Sum : $res");
+}
+
+</pre>
+
+
+## Class & Object :
 
 
 
