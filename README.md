@@ -183,6 +183,98 @@
 > * Fat-arrow (=>) is used to make any function look like an expression.
 > * A function that has a body of only one line, in the function itself expression can be converted. For that { } has to be removed.
 
+<br>
+
+#### Example - Simple
+<pre>
+	void name() {
+	
+		print("Hello Dart");
+
+	}
+</pre>
+
+<br>
+
+#### Example - Converting into Expression
+<pre>
+	void name() => print("Hello Dart");
+</pre>
+
+<br>
+
+### Note : `If any function has return statement then also remove return keyword from it is necessary.`
+
+<br>
+
+#### Example - Simple
+<pre>
+	int sum(int a, int b) {
+	
+		return a + b;
+
+	}
+</pre>
+
+<br>
+
+#### Example - Converting into Expression
+<pre>
+	int sum(int a , int b) => a + b;
+</pre>
+
+<br><br>
+
+
+## Types of Function Parameters :
+
+<br>
+
+> * `While defining a function, catch parameters can be defined in 3 different ways.`
+
+<br>
+
+> * i) Default Parameters
+> * ii) Optional Parameters
+> * iii) Required Parameters 
+
+<br><br>
+
+### 1) `Default Parameters`
+
+<br>
+
+<pre>
+	import 'dart:io';
+
+	int sum(int a, int b) => a+b;
+
+	void main() {
+
+		int a,b,res;
+
+		stdout.write("Enter a : ");
+		a = int.parse(stdin.readLineSync()!);
+
+		stdout.write("Enter b : ");
+		b = int.parse(stdin.readLineSync()!);
+
+		res = sum(a,b);
+
+		print("😀 Sum of $a and $b = $res 😀");
+	}
+</pre>
+
+<br><br>
+
+### 2) `Optional Parameters`
+
+<br>
+> * Optional Parameters Two Types :
+
+> * 1) Optional Positional
+> * 2) Optional Named
+
 
 
 
