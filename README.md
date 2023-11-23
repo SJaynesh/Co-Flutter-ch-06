@@ -270,11 +270,28 @@
 ### 2) `Optional Parameters`
 
 <br>
+
 > * Optional Parameters Two Types :
 
 > * 1) Optional Positional
 > * 2) Optional Named
 
+
+### 1) Optional Positional :
+> * To specify optional positional parameters, use square [ ] brackets.
+
+<pre>
+	// Optional Positional <=> []
+	
+	int sum(int a, int b, [int c = 0, int d = 0]) => a + b + c + d;
+	
+	void main() {
+	  int res = sum(10, 10, 10, 10);
+	
+	  print("Sum : $res");
+	}
+
+</pre>
 
 
 
