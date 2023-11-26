@@ -2,6 +2,10 @@
 
 <br><br>
 
+### (6.1)
+
+<br><br>
+
 ## Function as Expression :
 
 <br>
@@ -361,12 +365,22 @@ void main() {
 
 </pre>
 
+<br><br>
+
+### (6.2)
+
+<br><br>
 
 ## OOP :
 > * `OOP Stander for Object Oriented Programming.`
 > * OOP is a Concept by which code becomes well structured, well Organized, well Secured and increases it's reusability.
 
+<br>
+
 ### Why use OOP concept ?
+
+<br>
+
 > * You code is :-
 > * - Well Structured
 > * - Well Organuzed
@@ -374,7 +388,11 @@ void main() {
 > * - Reusability
 
 <br/><br/>
+
 ### - Principles of OOP :
+
+<br>
+
 
 > * 4 Principles OOP :
 >
@@ -382,8 +400,6 @@ void main() {
 >   * 2. Inheritence => Data passing  => (to share)
 >   * 3. Polymorphism => Multitasking => (to behave in multiple ways)
 >   * 4. Data Abstraction => Security/Restriction => (to secure)
-
-<br/><br/>
 
 <br/><br/>
 
@@ -396,6 +412,9 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/62b1204a-2cb5-4d7
 <br/><br/>
 
 ### Two components of OOP :
+
+<br>
+
  > `Class` <br/>
  > `Object` <br/>
 
@@ -406,6 +425,9 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/62b1204a-2cb5-4d7
 <br>
 
 ### Class :
+
+<br>
+
 > * `Class is a Collection of Data Members And Data Member Function.`
 > * Class is a User Define Datatype.
 > * Class is a Categorized Collection of Attributes and methods.
@@ -414,6 +436,9 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/62b1204a-2cb5-4d7
 <br>
 
 ### Object :
+
+<br>
+
 > * Object is a Variable(instance) of class by which we can use the data of class.
 > * Object is reference of pre-built category(class) which provides the inbuilt function alities.
 
@@ -432,6 +457,8 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/8cd02d9c-bc67-417
 <br><br>
 
 ## Syntax :
+
+<br>
 
 <pre>
 	* Syntax to declare a class :
@@ -456,6 +483,9 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/8cd02d9c-bc67-417
 <br><br>
 
 ## Encapsulation :
+
+<br>
+
 > * Encapsulation means wrapping code as much as you can in a class.
 > * Every logic must be written in class.
 > * It helps in hiding the implementation details and provides data protection.
@@ -466,15 +496,27 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/8cd02d9c-bc67-417
 
 <br>
 
+> * Getter and Setter are the special methods of the class, which can be used to assign and get the values of the properties of the class.
+
+<br>
+
 #### Setter :
-> * A function to take input of attributes.
+
+<br>
+
+> * Setter method is used to assign or initialise properties of a class.
+> * A function to take input of attributes in class.
 
 <br>
 
 #### Getter :
-> * A function to give output of attributes.
 
 <br>
+
+> * A getter method is used to access the properties of a class.
+> * A function to give output of attributes in class.
+
+<br><br>
 
 <pre>
 	import 'dart:io';
