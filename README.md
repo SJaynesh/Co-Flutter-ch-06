@@ -659,6 +659,17 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/8cd02d9c-bc67-417
 </pre>
 
 
+<br><br>
+
+### (6.3)
+
+<br>
+
+
+## Custom setters and getters :
+
+
+
 
 
 
