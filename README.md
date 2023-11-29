@@ -668,6 +668,164 @@ https://github.com/SJaynesh/CPP-Languge-Ch-02/assets/115562979/8cd02d9c-bc67-417
 
 ## Custom setters and getters :
 
+<br>
+
+>* `Custom Setter and Getter is a updated version in setter and getter.`
+>* Custom setter and getter are used when attributors are private and need to be accessed.
+>* set and get keyword are used to become custom centers and getters.
+
+<br>
+
+### How to create a Private attributes in class ?
+
+<br>
+
+> * 1. Class must be created in separate dart file.
+> * 2. Put underscore '_' before private members. 
+
+
+#### Example :
+
+<br>
+
+<pre>
+	int? _id;
+	String? _name;
+</pre>
+
+<br>
+
+<pre>
+  Student.dart
+
+class Student {
+  int? _id;
+  String? _name;
+  double? _per;
+
+  void setData({required int id, required String name, required double per}) {
+    this._id = id;
+    this._name = name;
+    this._per = per;
+  }
+
+  void getData() {
+    print("Id\t: $_id");
+    print("Name\t: $_name");
+    print("Per\t: $_per");
+  }
+}
+
+</pre>
+
+<br>
+
+<pre>
+ Student_main.dart
+	
+import 'Student.dart';
+
+void main() {
+  Student obj = Student();
+
+  obj.setData(id: 101, name: "Jaynesh", per: 89.63);
+  obj.getData();
+}
+
+</pre>
+
+<br><br>
+
+## Custom Setter and Getter:
+
+<br>
+
+> * must be created for each attribute separately.
+
+<br>
+
+### Custom Setter :
+
+<br>
+
+#### Syntax :
+<pre>
+	set field_name(argument)
+	{
+	 // Statement
+	}
+</pre>
+
+<br>
+
+### Custom Getter :
+
+<br>
+
+#### Syntax :
+<pre>
+	return_type get field_name
+	{
+	 // return val;
+	}
+</pre>
+
+<br>
+
+
+<pre>
+Student.dart
+	
+class Student {
+  int? _id;
+  String? _name;
+  double? _per;
+
+  set setId(int id) {
+    _id = id;
+  }
+
+  set setName(String name) {
+    _name = name;
+  }
+
+  set setPer(double per) {
+    _per = per;
+  }
+
+  int get getId {
+    return _id!;
+  }
+
+  String get getName {
+    return _name!;
+  }
+
+  double get getPer {
+    return _per!;
+  }
+}
+
+</pre>
+
+
+<pre>
+Student_main.dart
+import 'Student_custom_setter_getter.dart';
+
+void main() {
+  Student obj = Student();
+
+  obj.setId = 101;
+  obj.setName = "Jaynesh";
+  obj.setPer = 89.65;
+
+  print("ID: ${obj.getId}");
+  print("Name: ${obj.getName}");
+  print("Per: ${obj.getPer}");
+}
+
+</pre>
 
 
 
