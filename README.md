@@ -873,6 +873,205 @@ void main() {
 
 </pre>
 
+<br><br>
+
+## Constructor & Its types :
+
+<br>
+
+> * `Constructor is a block of code which is automatically invoked when class is instanciated.`
+> * Constructor is automatically called when an object(instance of class) is created. It is a special member function of the class.
+> * It mainly used to assign data in attributes.
+
+<br>
+
+<pre>
+
+	- To instanciate => To create Object
+	- To invoke  => To execute any method of class
+	- To call => To execute an UDF
+</pre>
+
+<br>
+
+### Rules to Create Constructor :
+
+<br>
+
+> * The name constructor must be same as class name.
+> * Constructor cannot have any return datatype like void, int, double, etc...
+> * It cannot return anything(Value).
+
+<br/><br/>
+
+https://github.com/SJaynesh/CPP-Languge-Ch-04/assets/115562979/45f31973-7713-4d2c-9c58-6a1c581e41f5
+
+<br/><br/>
+
+<pre>
+class DartProgram {
+  DartProgram() {
+    print("Hello Dart Language 😀");
+  }
+}
+
+void main() {
+  DartProgram dartProgram = DartProgram();
+}
+</pre>
+
+<br><br>
+
+## Types of Constructor :
+
+<br>
+
+> * 1. Default Constructor.
+> * 2. Parameterized Constructor.
+> * 3. Named Constructor.
+> * 4. Factory Constructor.
+
+<br> 
+
+### 1. Default Constructor:
+
+<br>
+
+#### `Syntax :`
+
+<br>
+
+<pre>
+	class_name() {
+		// constructor body
+	}
+</pre>	
+
+<br>
+
+### 2. Parameterized Constructor:
+
+<br>
+
+#### `Syntax :`
+
+<br>
+
+<pre>
+	class_name(parameteres) {
+		// constructor body
+	}
+</pre>	
+
+<br>
+
+#### `Example :`
+
+<br>
+
+<pre>
+class Data {
+  int? no;
+  String? name;
+
+  // Parameterized Constructor
+  Data({required int no, required String name}) {
+    this.no = no;
+    this.name = name;
+  }
+
+  //getter
+  void output() {
+    print("No\t: $no");
+    print("Name\t: $name");
+  }
+}
+
+void main() {
+  Data data = Data(no: 6060, name: "Sarkar");
+
+  data.output();
+}
+</pre>
+
+<br>
+
+### `Note:` In dart, we cannot create both default and parameterised constructor in same class. So for this solution, dart provides named constructor.
+
+
+### 3. Named Constructor:
+
+> * A Named constructor is used to create more than one constructor.
+
+<br>
+
+#### `Syntax :`
+
+<br>
+
+<pre>
+	class_name.constructor_name(parameteres) {
+		// constructor body
+	}
+</pre>	
+
+<br>
+
+#### `Example :`
+
+<br>
+
+<pre>
+import 'dart:io';
+
+class Student {
+  int? id;
+  String? name;
+
+  Student() {
+    print("Default Constructor");
+  }
+
+  Student.getInstence() {
+    print("object created..");
+  }
+
+  Student.setValue() {
+    stdout.write("Enter No: ");
+    id = int.parse(stdin.readLineSync()!);
+
+    stdout.write("Enter Name: ");
+    name = stdin.readLineSync()!;
+  }
+}
+
+void main() {
+  Student student = Student();
+  Student student1 = Student.getInstence();
+  Student student2 = Student.setValue();
+}
+
+</pre>
+
+<br><br>
+
+### How to provide attributes in a class?
+
+<br>
+
+#### 1. Null Safety:
+> * Attributors can also be made null.
+> * `Ex.` int? id;
+
+<br>
+
+### 2.Late Keyword:
+> * we use the late keyword to declare variables that will be initialized later.
+> * 
+
+
+
+
 
 
 
