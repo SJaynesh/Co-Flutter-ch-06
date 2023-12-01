@@ -1067,7 +1067,22 @@ void main() {
 
 ### 2.Late Keyword:
 > * we use the late keyword to declare variables that will be initialized later.
-> * 
+> * `Ex.` late int id;
+
+<br>
+
+#### 3. Final Keyword:
+> * final to fix the value.
+> * When we final the variable we don't need to assign the value to the variable.
+> * `Ex.` final int id;
+
+<br>
+
+#### 4. Default Value:
+> * Atributes to assign default value.
+> * `Ex.` int id = 0;
+
+<br>
 
 
 
