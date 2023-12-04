@@ -1082,11 +1082,247 @@ void main() {
 > * Atributes to assign default value.
 > * `Ex.` int id = 0;
 
+<br><br>
+
+
+### (6.4)
+
+<br>
+
+## Factory constructor:
+
+<br>
+
+> * Factory constructor to convert raw data into objects.
+> * Factory constructor return the current class's object.
+> * Factory constructor can be created using 'factory' keyword.
+> * `A factory constructor is convert  raw data into objects and returns an object of the current class.`
+> * A constructor that takes a map in its parameters and returns an object is called a factory constructor.
+
+
+<br>
+
+<pre>
+class Student {
+  final int id;
+  final String name;
+  final double per;
+
+  Student({required this.id, required this.name, required this.per}) {
+    print("Object Created");
+  }
+
+  factory Student.fromMap({required Map data}) {
+    return Student(
+      id: data['id'],
+      name: data['name'],
+      per: data['per'],
+    );
+  }
+
+  void getData() {
+    print("ID\t: $id");
+    print("NAME\t: $name");
+    print("PER\t: $per");
+  }
+}
+
+void main() {
+  Map stud = {
+    'id': 101,
+    'name': "Jaynesh Sarkar",
+    'per': 89.56,
+  };
+
+  Student student = Student.fromMap(data: stud);
+
+  student.getData();
+}
+</pre>
+
+<br>
+
+<pre>
+class Student {
+  final int id;
+  final String name;
+  final double per;
+
+  Student({required this.id, required this.name, required this.per}) {
+    print("Object Created");
+  }
+
+  factory Student.fromMap({required Map data}) {
+    return Student(
+      id: data['id'],
+      name: data['name'],
+      per: data['per'],
+    );
+  }
+
+  void getData() {
+    print("\nID\t: $id");
+    print("NAME\t: $name");
+    print("PER\t: $per\n\n");
+  }
+}
+
+void main() {
+  List<Map> studData = [
+    {
+      'id': 101,
+      'name': "Jaynesh Sarkar",
+      'per': 89.56,
+    },
+    {
+      'id': 102,
+      'name': "Akhil Sarkar",
+      'per': 90.4,
+    },
+    {
+      'id': 103,
+      'name': "Nayan Thakur",
+      'per': 89.56,
+    }
+  ];
+
+  List<Student> allStudent =
+      studData.map((e) => Student.fromMap(data: e)).toList();
+
+  allStudent.forEach((e) {
+    e.getData();
+  });
+}
+</pre>
+
+<br><br>
+
+## Inheritance & Its types:
+
+<br>
+
+> * `To Share data from one class to another class.`
+> *  To share data among the class.
+> *  to exchange data between class.
+> *  Here main class which data will be shared is called parent class.
+> *  The class which consumes data of another class is called child class.
+
+<br>
+
+### Parent class :
+> * `A class whose properties are inherited by another class is called a parent class.`
+> * Parent class is also called Super class or Base class.
+
+<br>
+
+### Child class :
+> * `A class that itself inherits the properties of another class So such class is called child class.`
+> * Child class is also called Sub class or Derived class.
+
+
+## Types of Inheritance:
+
+<br>
+
+> 1) Simple / Single inheritance
+> *  `class 2`
+> 2) Multilevel inheritance
+> * `min: 3     max: N`
+> 3) Hierarchical inheritance
+> * `min: 3     max: N    parent: 1   child: N`
+> 4) Multiple inheritance
+> * `min: 3     max: N    parent: N   child: 1`
+> 5) Hybrid inheritance
+> * `min: 4     max: N`
+
+<br><br>
+
+
+### Types of Inheritence in DART:
+
+<br>
+
+> 1) Simple / Single inheritance
+> 2) Multilevel inheritance
+> 3) Hierarchical inheritance
+
+<br><br>
+
+### NOTE:
+> * `Dart does not supports more than 1 Parent class.`
+> * `So, the multiple and hybrid inheritance are not possible.`
+
+<br>
+
+## Inheritence in DART:
+
+<br>
+
+> * Extend keyword are used to inherit in Dart.
+> * Syntax : `class child_class extends parent_class { }`
+
+
+<br><br>
+
+### 1) Single level Inheritence :
+
+<br>
+
+> * `In single inheritance, a class can inherit from only one class.`
+
+<br>
+
+> `Minimum class : ` 2 <br>
+> `Maximum class : ` 2 <br>
+
+<br>
+
+<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/e8be4f7e-c72c-490b-9221-0f4552de175a.png" width=60% height=50%></p>
+
 <br>
 
 
+<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/1a7f4fad-be30-4c50-984a-591081aee40c.png" width=60% height=50%></p>
 
+<br>
 
+<pre>
 
+	class Account
 
+	class User
+</pre>
 
+<br>
+
+### 2) Multilevel Inheritence:
+
+<br>
+
+> * `In multilevel inheritance, a class can inherit from a derived class, making the inheritance chain longer.`
+
+<br>
+
+> `Minimum class : ` 3 <br>
+> `Maximum class : ` Unlimited <br>
+
+<br>
+
+<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/b391c75c-308b-4d4d-87f4-6eeed8ef9cf0.png" width=60% height=50%></p>
+
+<br>
+
+### 3)  Hierarchical inheritance : 
+> * `Hierarchical inheritance to provide only one Parent class and multiple child class.`
+> * Multiple derived classes inherit from a single base class.
+
+<br>
+
+> `Minimum class : ` 3 <br>
+> `Maximum class : ` Unlimited <br>
+
+<br>
+
+<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/2ce29599-e97d-4715-8de7-6ebcfb09df57.png" width=60% height=50%></p>
+
+<br>
