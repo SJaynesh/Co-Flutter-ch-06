@@ -1308,7 +1308,7 @@ void main() {
 
 <br>
 
-<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/b391c75c-308b-4d4d-87f4-6eeed8ef9cf0.png" width=60% height=50%></p>
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/6a661c6e-5e39-40bf-90a1-6f3f713a4db2.png" width=60% height=50%></p>
 
 <br>
 
@@ -1321,8 +1321,9 @@ void main() {
 > `Minimum class : ` 3 <br>
 > `Maximum class : ` Unlimited <br>
 
+
 <br>
 
-<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/2ce29599-e97d-4715-8de7-6ebcfb09df57.png" width=60% height=50%></p>
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/410d02b2-595b-4ad4-98ed-c54ac785b2b7.png" width=60% height=50%></p>
 
 <br>
