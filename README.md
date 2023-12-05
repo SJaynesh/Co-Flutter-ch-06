@@ -1332,6 +1332,31 @@ void main() {
 
 <br><br>
 
+
+## Polymorphism:
+
+<br>
+
+> * Polymorphism is a fundamental concept in object-oriented programming (OOP).
+> * `Poly` => Many/Multiple/different
+> * `Morphs` => Forms / Structure / behaviour
+
+
+<br>
+
+> * `It is a concept where any method or attribute have multiple/different behaviours.`
+
+<br>
+
+
+<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-08/assets/115562979/414d8227-6bbb-4224-a83f-954a69e415aa.png" width=60% height=50%></p>
+
+<br>
+
+https://github.com/SJaynesh/CPP-Languge-Ch-08/assets/115562979/d7381d88-6185-4fca-a096-822453572612
+
+<br><br>
+
 ## Method Overriding In Dart:
 
 <br>
