@@ -1277,14 +1277,15 @@ void main() {
 
 <br>
 
-<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/e8be4f7e-c72c-490b-9221-0f4552de175a.png" width=60% height=50%></p>
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/8d8c98ce-c9ba-4e7f-8feb-325ed4423bb0.png" width=60% height=50%></p>
 
 <br>
 
 
-<p><img src = "https://github.com/SJaynesh/CPP-Languge-Ch-06/assets/115562979/1a7f4fad-be30-4c50-984a-591081aee40c.png" width=60% height=50%></p>
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/102c62e7-5b7d-4f9c-9e58-e81e6967950b.png" width=60% height=50%></p>
 
 <br>
+
 
 <pre>
 
@@ -1313,6 +1314,9 @@ void main() {
 <br>
 
 ### 3)  Hierarchical inheritance : 
+
+<br>
+
 > * `Hierarchical inheritance to provide only one Parent class and multiple child class.`
 > * Multiple derived classes inherit from a single base class.
 
@@ -1326,4 +1330,36 @@ void main() {
 
 <p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-06/assets/115562979/410d02b2-595b-4ad4-98ed-c54ac785b2b7.png" width=60% height=50%></p>
 
+<br><br>
+
+## Method Overriding In Dart:
+
 <br>
+
+> * `Create same named method in derived class with same parameters.`
+> * When a method in the parent class is redefined within a child class, it is called Method Overriding.
+
+<br>
+
+### Rules:
+
+<br>
+
+> 1) All the methods must have same name.
+> 2) All the methods must be in derived(child) class.
+> 3) All the method must have same signatures(Parameters, return type).
+
+<br>
+
+<pre>
+	
+	Class       : Different
+	Methid Name : Same 
+	Parameters  : Same
+	
+</pre>
+
+<pre>
+	
+</pre>
+
