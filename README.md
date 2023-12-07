@@ -1383,7 +1383,67 @@ https://github.com/SJaynesh/CPP-Languge-Ch-08/assets/115562979/d7381d88-6185-4fc
 	
 </pre>
 
+<br>
+
 <pre>
-	
+	class Car {
+  void showOwner() {
+    print("This is parent class car");
+  }
+}
+
+class Raj extends Car {
+  @override
+  void showOwner() {
+    print("This is Raj class car");
+  }
+}
+
+void main() {
+  Raj raj = Raj();
+
+  raj.showOwner();
+}
+
 </pre>
+
+<br><br>
+
+## Exception:
+
+<br>
+
+> * `Logical mistake of code which is unable to handle by compiler`
+> * An Exception is runtime object which is occurred in some rare case circumstances(situation).
+> * Whenever an exception occur our programs execution flow gets interrupted and halt.
+> * Exception is not an error but a one type of situation which compiler cannot handle.
+> * An exception causes the program to crash.
+> * It Occures by Developer and User both.
+
+
+<br><br>
+
+## Difference between Error & Exception :
+
+<br>
+
+Error | Exception
+-------- | -----------
+Syntax mistake of code which is unable to handle by compiler. | Logical mistake of code which is unable to handle by compiler.
+It happens on compile time. | It happens on run time.
+It Occures by Developer. | It Occures by Developer and User both.
+
+
+<br><br>
+
+
+## Exception Handling :
+
+<br>
+
+> * A mechanism by which we can handle anytype of exception is known as exception handling.
+> * We can handle any exception using try, on, catch, and finally keyword.
+
+
+
 
