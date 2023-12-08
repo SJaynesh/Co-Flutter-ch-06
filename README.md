@@ -1444,6 +1444,103 @@ It Occures by Developer. | It Occures by Developer and User both.
 > * A mechanism by which we can handle anytype of exception is known as exception handling.
 > * We can handle any exception using try, on, catch, and finally keyword.
 
+<br><br>
+
+## try Kerword / block :
+
+<br>
+
+> * In this type of block we can write a code that may not leads us towards exception.
+> * If any exception occurrs than out flow of execution will be redirected into on block or catch block.
+
+<br><br>
+
+## on block :
+
+<br>
+
+> * We can write as many as on blocks corresponding to different types of exception.
+> * We can write such a code in on block that will be executed if and only if an exception is occured from the try block.
+
+<br><br>
+
+## catch block :
+
+<br>
+
+> * The exception raised inside the catch block is handled and its solution is written at the error location of the exception.
+> * We can also store the name of the exception that occurs inside the catch block in a variable.
+> * Any type of exception raised inside the catch block can be handled. Hence catch block is often called general exception block.
+
+<br><br>
+
+## finally block :
+
+<br>
+
+> * A finally block is a block that will always be executed. That is, whether an exception occurs or not, the coding in the finally block will always be executed.
 
 
+### Syntax:
 
+<pre>
+ 	try {
+          //code which may cause exception
+          //throw [optional since dart provides auto throw of exception class]          
+        }
+        on [exception-class] {
+          //can be used for specific exception only          
+        }
+        catch(e) {
+          //can be use for catch any kind of (general) exceptions.
+          //can be used as an exception identifier
+        }
+        finally {
+          //executes each time no matter exception is occured or not.          
+        }
+</pre>
+
+<br>
+
+### Exception class :
+
+<br>
+
+> * IntegerDivisionByZeroException
+> * FormatException
+> * UnhandledError
+> * MissingPlugginException
+
+<br>
+
+<pre>
+import 'dart:io';
+
+void main() {
+  int a = 0, b;
+
+  stdout.write("Enter a: ");
+  try {
+    a = int.parse(stdin.readLineSync()!);
+  } on FormatException {
+    print("Inbalid format !!");
+    return;
+    // exit(0);
+  }
+
+  stdout.write("Enter b: ");
+  b = int.parse(stdin.readLineSync()!);
+
+  try {
+    print("Division: ${a ~/ b}");
+  } on UnsupportedError {
+    print("Cannot devide by ZERO !!");
+  } on FormatException {
+    print("Invalid format !!");
+  } catch (e) {
+    print("Exception: $e");
+  } finally {
+    print("Exception handled successfully !!");
+  }
+}
+</pre>
