@@ -20,10 +20,15 @@
 <br><br>
 
 ### Types of function block :
+
+<br>
+
 > * 1. block function    () {}   //Can contain multiple statements
 > * 2. lambda function   () =>   //Can contain only single statement (Expression)
 
 ### Types of Function : 
+
+<br>
 
 > `1) Built - in function` <br><br>
 > `2) User Defined Functions (UDF) `
@@ -56,6 +61,9 @@
 <br><br>
 
 ### Types : 
+
+<br>
+
   > 1) TNRN (Take Nothing Return Nothing) 
   > 2) TSRN (Take Something Return Nothing) 
   > 3) TNRS (Take Nothing Return Something) 
@@ -95,6 +103,7 @@
 
 > * `Function is not get an argument and does not return any data type.`
 
+<br>
 
 
 <pre>
@@ -182,16 +191,27 @@
 <br><br>
 
 ## Expression :
+
+<br>
+
 > * `Expression means Single line Statement.`
 
 <br>
 
 ## Function as Expression :
+
+<br>
+
 > * `Function as expression means converting a function into short-hand syntax.`
 > * function which contains only single statement.
 > * Fat-arrow (=>) is used to make any function look like an expression.
 
+<br>
+
 ### Steps to convert into expression :
+
+<br>
+
 > * remove '{}' or 'return' keyword.
 > * add '=>' (fat arrow) in replacement of '{}' and 'return' keyword.
 > * A function that has a body of only one line, in the function itself expression can be converted. For that { } has to be removed.
@@ -200,6 +220,8 @@
 <br>
 
 #### Example - Simple
+<br>
+
 <pre>
 	void name() {
 	
@@ -211,6 +233,9 @@
 <br>
 
 #### Example - Converting into Expression
+
+<br>
+
 <pre>
 	void name() => print("Hello Dart");
 </pre>
@@ -290,14 +315,23 @@
 > * 1) Optional Positional
 > * 2) Optional Named
 
+<br>
 
 ### 1) Optional Positional :
+
+<br>
+
 > * To specify optional positional parameters, use square [ ] brackets.
 > *  Optional Positional to assign default value/null aware.
 > *  ?? (NULL CHECK OPERATOR)
 
 #### Syntax :
+
+<br>
+
 > * `void functionName(param1, [optional_param_1, optional_param_2]) { }`
+
+<br>
 
 <pre>
 	// Optional Positional <=> []
@@ -329,6 +363,9 @@
 <br><br>
 
 ### 2) Optional Named :
+
+<br>
+
 > * Unlike positional parameters, the parameter's name must be specified while the value is being passed.
 > * Curly brace { } can be used to specify optional named parameters.
 > * Optional Named to assign default value/null aware/required.
@@ -349,9 +386,14 @@
 <br><br>
 
 ### 3) `Required Parameters :`
+
+<br>
+
 > * Required Parameters is use required keyword.
 > * Required means Fix assign arguments in function.
 > * required arguments to write inside for { }.
+
+<br>
 
 <pre>
 	
